@@ -1,0 +1,451 @@
+<style>
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,3000,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.navbar a {
+  float: right;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+.banner
+{
+   position: relative;
+   width: 100%;
+   height: 100vh;
+   background:crimson; 
+   display:flex ;
+   justify-content: center;
+   align-items: center; 
+}
+.banner img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:cover ;
+    opacity:0.25;
+}
+.banner .content
+{
+    position: relative;
+    max-width: 750px;
+    text-align: center;
+}
+.banner .content h2
+{
+    color:#fff;
+    font-size: 60px;
+}
+.banner .content p{
+    color: #fff;
+    font-size: 18px;
+}
+.banner header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+.banner header .logo
+{
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+/*.banner header .toggle
+{
+    position: relative;
+    width: 36px;
+    height: 28px;
+    background: url(ABHISHEK/wings.png);
+    background-size: cover;
+    cursor: pointer;
+}*/
+.services .heading{
+    color: #fff;
+}
+.services  p {
+    color: #fff;
+}
+.services
+{
+    background:#12222d;
+    
+    padding:100px;
+    text-align: center;
+
+}
+.services .container
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+.services .container .serviceBx
+{
+    position: relative;
+    background: #fff;
+    width: 350px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    font-family: Copperplate, Papyrus, fantasy;
+    color: rgb(200, 21, 21);
+   
+}
+.content h2{
+    font-family: Copperplate, Papyrus, fantasy;
+}
+span{
+    color: rgb(102, 255, 0);
+}
+
+.last {
+    
+    padding: 5px;
+    width: 60%;
+    margin: 50px;
+    text-align: right;
+}
+p .last{
+    text-decoration: #3475ca;
+    margin: 500px;
+    padding-left: 1000px;
+}
+
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body2 {
+    background-color: white;
+    font-family: "poppins" , sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.grid {
+    display: grid;
+    width: 114em;
+    grid-gap: 6rem;
+    grid-template-columns: repeat(auto-fit , minmax(30rem, 1fr));
+    align-items: start;
+}
+.grid-item {
+    background-color: #fff;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    box-shadow: 0 3 rem 6rem rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: 0.2s;
+}
+.grid-ite:hover {
+    transform: translateY(-0.5%);
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+}
+.card-img {
+    height: 20rem;
+    object-fit: cover;
+}
+.card-content {
+    padding: 3rem;
+}
+.card-header {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #0d0d0d;
+    margin-bottom: 1.5rem;
+}
+.card-text {
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.7;
+    color: #3d3d3d;
+    margin-bottom: 2.5rem;
+}
+.card-btn{
+    display: block;
+    width: 20%;
+    padding: 1.5rem;
+    font-size: #333333;
+    color:#3363ff;
+    text-align: center;
+    background-color: #d860fd;
+    border: none;
+    border-radius: 0.4rem;
+    transition: 0.2s;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+}
+.card-btn span{
+    margin-left: 1rem;
+    transition: 0.2s;
+}
+.card-btn:hover,
+.card-btn:active {
+    background-color: #c2cffc;
+}
+.card-btn:hover span,
+.card-btn:active span {
+    margin-left: 1.5rem;
+}
+.Contact {
+    background-color:antiquewhite;
+    height: 100vh;
+    
+}
+.Contact .heading{
+    text-align: center;
+    justify-content: center;
+    
+    height: 25vh;
+}
+.Contact p{
+    margin-left: 100px;
+    padding-top: 10px;
+    
+}
+
+.co{
+  max-width: 800px;
+  background: #fff;
+  width: 800px;
+  padding: 25px 40px 10px 40px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+.co .text{
+  text-align: center;
+  font-size: 35px;
+  font-weight: 600;
+  background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.co form{
+  padding: 30px 0 0 0;
+}
+.co form .form-row{
+  display: flex;
+  margin: 32px 0;
+}
+form .form-row .input-data{
+  width: 100%;
+  height: 40px;
+  margin: 0 20px;
+  position: relative;
+}
+form .form-row .textarea{
+  height: 70px;
+}
+.input-data input,
+.textarea textarea{
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid rgba(0,0,0, 0.12);
+}
+.input-data input:focus ~ label, .textarea textarea:focus ~ label,
+.input-data input:valid ~ label, .textarea textarea:valid ~ label{
+  transform: translateY(-20px);
+  font-size: 14px;
+  color: #3498db;
+}
+.textarea textarea{
+  resize: none;
+  padding-top: 10px;
+}
+.input-data label{
+  position: absolute;
+  pointer-events: none;
+  bottom: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+.textarea label{
+  width: 100%;
+  bottom: 40px;
+  background: #fff;
+}
+.input-data .underline{
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+}
+.input-data .underline:before{
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #3498db;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+.input-data input:focus ~ .underline:before,
+.input-data input:valid ~ .underline:before,
+.textarea textarea:focus ~ .underline:before,
+.textarea textarea:valid ~ .underline:before{
+  transform: scale(1);
+}
+.submit-btn .input-data{
+  overflow: hidden;
+  height: 45px!important;
+  width: 25%!important;
+}
+.submit-btn .input-data .inner{
+  height: 100%;
+  width: 300%;
+  position: absolute;
+  left: -100%;
+  background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+  transition: all 0.4s;
+}
+.submit-btn .input-data:hover .inner{
+  left: 0;
+}
+.submit-btn .input-data input{
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 700px) {
+  .container .text{
+    font-size: 30px;
+  }
+  .container form{
+    padding: 10px 0 0 0;
+  }
+  .container form .form-row{
+    display: block;
+  }
+  form .form-row .input-data{
+    margin: 35px 0!important;
+  }
+  .about-us p {
+    line-height: 2.4;
+  }
+  
+}
+.test {
+
+display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 40px;
+  background: antiquewhite;
+}
+
+.crapper {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: #ddd;
+
+}
+.dow {
+    width: 100%;
+    padding:  100px;
+}
+.image-section-us{
+    width: 20%;
+    float: left;
+}
+.image-section-us img{
+    width: 100%;
+    height:auto;
+}
+.content-us {
+    width: 60%;
+    float: left;
+    margin-left: 50px;
+}
+.content-us h2{
+    font-size: 90px;
+    letter-spacing: 3.5px;
+    margin-top: 25px;
+    color: #222;
+
+}
+.content-us h3 {
+    font-style: 40px;
+    font-family:'Times New Roman', Times, serif;
+    color: #b60112;
+    margin-top: 18px;
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+.content-us p {
+    display: flex;
+    position: relative;
+    max-width: 750px;
+    font-style: 20px;
+    font-family: sans-serif;
+    justify-content: baseline;
+    line-height: 1.5;
+    margin-top: 25px;
+    letter-spacing: 2.5px;
+}
+.logo1 {
+    font-size: large;
+    position: relative;
+    text-overflow: clip;
+    letter-spacing: 1.5px;
+    text-decoration-color: #b60112;
+    font-style: oblique;
+}
+.banner header .logo10
+{
+    color: #fff;
+    float: left;
+    text-decoration: none;
+    text-align: center;
+    font-size: 24px;
+    color:lemonchiffon;
+    font-weight: 700;
+    display: block;
+    overflow: hidden;
+    letter-spacing: 1px;
+}
+
+</style>
