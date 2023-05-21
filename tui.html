@@ -1,0 +1,93 @@
+import os
+import subprocess
+
+def main():
+    while True:
+        print("\nSelect an option:")
+        print("1. Show date and time")
+        print("2. Show current directory")
+        print("3. List files in current directory")
+        print("4. Create a new directory")
+        print("5. Remove a directory")
+        print("6. Create a new file")
+        print("7. Edit a file")
+        print("8. View a file")
+        print("9. Remove a file")
+        print("10. Launch Docker")
+        print("11. List running Docker containers")
+        print("12. Stop a running Docker container")
+        print("13. Remove a stopped Docker container")
+        print("14. List Docker images")
+        print("15. Remove a Docker image")
+        print("16. Exit")
+
+        choice = input("\nEnter your choice: ")
+
+        if choice == '1':
+            print("\nDate and time:", subprocess.getoutput("date"))
+
+        elif choice == '2':
+            print("\nCurrent directory:", os.getcwd())
+
+        elif choice == '3':
+            print("\nFiles in current directory:")
+            subprocess.call("ls")
+
+        elif choice == '4':
+            dirname = input("\nEnter the name of the new directory: ")
+            os.mkdir(dirname)
+            print("\nDirectory", dirname, "created")
+
+        elif choice == '5':
+            dirname = input("\nEnter the name of the directory to remove: ")
+            os.rmdir(dirname)
+            print("\nDirectory", dirname, "removed")
+
+        elif choice == '6':
+            filename = input("\nEnter the name of the new file: ")
+            subprocess.call(["touch", filename])
+            print("\nFile", filename, "created")
+
+        elif choice == '7':
+            filename = input("\nEnter the name of the file to edit: ")
+            subprocess.call(["nano", filename])
+
+        elif choice == '8':
+            filename = input("\nEnter the name of the file to view: ")
+            subprocess.call(["cat", filename])
+
+        elif choice == '9':
+            filename = input("\nEnter the name of the file to remove: ")
+            os.remove(filename)
+            print("\nFile", filename, "removed")
+
+        elif choice == '10':
+            subprocess.call(["sudo", "systemctl", "start", "docker"])
+            print("\nDocker launched")
+
+        elif choice == '11':
+            subprocess.call(["sudo", "docker", "ps"])
+
+        elif choice == '12':
+            container_id = input("\nEnter the ID of the container to stop: ")
+            subprocess.call(["sudo", "docker", "stop", container_id])
+
+        elif choice == '13':
+            container_id = input("\nEnter the ID of the container to remove: ")
+            subprocess.call(["sudo", "docker", "rm", container_id])
+
+        elif choice == '14':
+            subprocess.call(["sudo", "docker", "images"])
+
+        elif choice == '15':
+            image_id = input("\nEnter the ID of the image to remove: ")
+            subprocess.call(["sudo", "docker", "rmi", image_id])
+
+        elif choice == '16':
+            break
+
+        else:
+            print("\nInvalid choice, please try again.")
+
+if __name__ == "__main__":
+    main()
