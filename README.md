@@ -22,12 +22,22 @@ CloudTerminal is a full-stack web application that provides a virtual terminal e
 ## Installation
 
 1. Clone the repository:
+'''bash
+git clone https://github.com/devyanshidubey-02/CloudTerminal.git
+'''
 
 2. Navigate to the project directory:
+'''bash
+cd CloudTerminal
+'''
 
 3. Install the required dependencies:
+'''bash
+pip install -r requirements.txt
+'''
 
 4. Run the application:
+
 
 5. Access the application in your web browser at `http://localhost:5000`.
 
